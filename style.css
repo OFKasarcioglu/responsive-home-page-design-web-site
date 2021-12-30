@@ -1,68 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html{
-    font-size: 10px;
-}
-
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    /*REM cinsinden tanımlamak HTML de belirtiğimi PX değeri içe çarpmak demektir.*/
-    font-size: 1.6rem;
-    /* Satır arası boşluk */
-    line-height: 1.5;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-}
-a{
-    /*Link alt çizgisini kaldırmak. */
-    text-decoration: none;
-
-
-}
-p{
-    /*REM yanında belirttiğim 0 değeri sağ ve sol taraftan boşluk istemediğimdir.*/
-    padding: 1.6rem 0;
-
+html {
+  font-size: 10px;
 }
 
-header{
-    height: 46rem;
+body {
+  font-family: "Josefin Sans", sans-serif;
+  /*REM cinsinden tanımlamak HTML de belirtiğimi PX değeri içe çarpmak demektir.*/
+  font-size: 1.6rem;
+  /* Satır arası boşluk */
+  line-height: 1.5;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+a {
+  /*Link alt çizgisini kaldırmak. */
+  text-decoration: none;
+}
+p {
+  /*REM yanında belirttiğim 0 değeri sağ ve sol taraftan boşluk istemediğimdir.*/
+  padding: 1.6rem 0;
 }
 
-header .bg-picture{
-position: absolute;
-background-image: url("images/bg-photo.jpg");
-background-size: cover;
-background-position: center;
-height: 46rem;
-width: 100%;
-opacity: 0.7;
-z-index: -1;
+img{
+    width: 100%;
+    height: auto;
 }
-header h1{
- 
-    padding: 12rem;
-    padding-bottom: 0;
-    
+
+header {
+  height: 46rem;
 }
-.dugme{
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    border: 1px solid #666;
-    /*Üstten ve Alttan 16px yani 1.6 rem  | sağdan ve soldan 3.2rem yani 32px padding */
-    padding: 1.6rem 3.2rem;
-    margin: .5rem 0;
+
+header .bg-picture {
+  position: absolute;
+  background-image: url("images/bg-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 46rem;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
 }
-.dugme:hover
-{
-    background-color:#fff;
+header h1 {
+  padding: 12rem;
+  padding-bottom: 0;
+}
+.dugme {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  border: 1px solid #666;
+  /*Üstten ve Alttan 16px yani 1.6 rem  | sağdan ve soldan 3.2rem yani 32px padding */
+  padding: 1.6rem 3.2rem;
+  margin: 0.5rem 0;
+}
+.dugme:hover {
+  background-color: #fff;
+  color: #333;
+  /*Yavaş değişim için transition kullandık. All diyerekte her yerden ve 0.7 diyerekte saniye cinsinden belli ettik*/
+  transition: all 0.7s;
+}
+
+#_birinciSection{
+    background-color: #fff;
     color: #333;
-    /*Yavaş değişim için transition kullandık. All diyerekte her yerden ve 0.7 diyerekte saniye cinsinden belli ettik*/
-    transition: all 0.7s;
+    padding: 3.2rem 0;
 }
 
+#_ikinciSection
+{
+    padding: 2rem;
+
+}
+#_ikinciSection ul{
+    /*UL taglarının sıralama ikonlarını kapatma*/
+    list-style: none;
+}
+#_ikinciSection li{
+    background:#fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+#_kolonIcerik{
+    padding: 1.5rem;
+}
