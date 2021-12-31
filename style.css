@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 10px;
+  font-size: 7px;
 }
 
 body {
@@ -29,6 +29,12 @@ p {
 img {
   width: 100%;
   height: auto;
+}
+
+.BosElemanYarat::after{
+  content: "";
+  display: block;
+  clear: both;
 }
 
 header {
@@ -106,3 +112,39 @@ footer {
 footer a {
   color: yellowgreen;
 }
+
+/* Mobil cihazlar için tasarım yapıldı ancak bu tasarımın TABLET ve PC içinde 
+yapılması gerekli aşşağıdaki bölümde bunları yaptık.
+
+min-width olarak gidecektir çünkü ilk mobil tasarıma göre yaptık.
+*/
+
+@media screen and (min-width:800px) {
+
+  html{
+    font-size: 9px;
+  }
+  
+}
+@media screen and (min-width:1200px) {
+
+  html{
+    font-size: 11px;
+  }
+  #_ikinciSection li{
+
+    /* Yan yana gelebilmeleri için width % 28 olarak verdim */
+    width: 28%;
+    margin: 1%;
+    display: inline-block;
+  }
+
+  .kutu{
+    /*PC versiyonunda iki adet kutu olduğu için % 50 olarak genişliği belirttik */
+    width: 50%;
+    float: left;
+
+  }
+  
+}
+
