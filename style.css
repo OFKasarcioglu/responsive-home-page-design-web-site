@@ -26,9 +26,9 @@ p {
   padding: 1.6rem 0;
 }
 
-img{
-    width: 100%;
-    height: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
 header {
@@ -65,26 +65,44 @@ header h1 {
   transition: all 0.7s;
 }
 
-#_birinciSection{
-    background-color: #fff;
-    color: #333;
-    padding: 3.2rem 0;
+#_birinciSection {
+  background-color: #fff;
+  color: #333;
+  padding: 3.2rem 0;
 }
 
-#_ikinciSection
-{
-    padding: 2rem;
+#_ikinciSection {
+  padding: 2rem;
+}
+#_ikinciSection ul {
+  /*UL taglarının sıralama ikonlarını kapatma*/
+  list-style: none;
+}
+#_ikinciSection li {
+  background: #fff;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+#_kolonIcerik {
+  padding: 1.5rem;
+}
 
+#_IkinciSection {
+  background-color: #eaeaea;
+  color: #333;
+  padding: 5rem;
 }
-#_ikinciSection ul{
-    /*UL taglarının sıralama ikonlarını kapatma*/
-    list-style: none;
+#_UcuncuSection .kutu {
+  padding: 5rem;
 }
-#_ikinciSection li{
-    background:#fff;
-    color: #333;
-    margin-bottom: 1.5rem;
+
+#_UcuncuSection .kutu:first-child {
+  background-color: darkslategray;
 }
-#_kolonIcerik{
-    padding: 1.5rem;
+footer {
+  padding: 4rem;
+  background-color: black;
+}
+footer a {
+  color: yellowgreen;
 }
