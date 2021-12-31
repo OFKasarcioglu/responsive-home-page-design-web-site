@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Poppins', sans-serif;
   /*REM cinsinden tanımlamak HTML de belirtiğimi PX değeri içe çarpmak demektir.*/
   font-size: 1.6rem;
   /* Satır arası boşluk */
@@ -30,9 +30,10 @@ img {
   width: 100%;
   height: auto;
 }
-
-.BosElemanYarat::after{
+/* Boş eleman oluşturacağız ve sonra da yok olmasını isteyeceğiz */
+.BosElemanYarat::after {
   content: "";
+  /*Bütün satırı kapsayacak*/
   display: block;
   clear: both;
 }
@@ -48,7 +49,7 @@ header .bg-picture {
   background-position: center;
   height: 46rem;
   width: 100%;
-  opacity: 0.7;
+  opacity: 50%;
   z-index: -1;
 }
 header h1 {
@@ -119,32 +120,25 @@ yapılması gerekli aşşağıdaki bölümde bunları yaptık.
 min-width olarak gidecektir çünkü ilk mobil tasarıma göre yaptık.
 */
 
-@media screen and (min-width:800px) {
-
-  html{
+@media screen and (min-width: 800px) {
+  html {
     font-size: 9px;
   }
-  
 }
-@media screen and (min-width:1200px) {
-
-  html{
+@media screen and (min-width: 1200px) {
+  html {
     font-size: 11px;
   }
-  #_ikinciSection li{
-
+  #_ikinciSection li {
     /* Yan yana gelebilmeleri için width % 28 olarak verdim */
     width: 28%;
     margin: 1%;
     display: inline-block;
   }
 
-  .kutu{
+  .kutu {
     /*PC versiyonunda iki adet kutu olduğu için % 50 olarak genişliği belirttik */
     width: 50%;
     float: left;
-
   }
-  
 }
-
